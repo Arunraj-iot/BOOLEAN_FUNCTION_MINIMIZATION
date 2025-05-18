@@ -1,4 +1,4 @@
-# BOOLEAN_FUNCTION_MINIMIZATION
+BOOLEAN_FUNCTION_MINIMIZATION
 
 **AIM:**
 
@@ -16,9 +16,15 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Theory**
 
-**Logic Diagram**
-![Screenshot 2024-12-06 194156](https://github.com/user-attachments/assets/e4363743-1680-423e-b944-bd9e25f8806d)
+Boolean expression for f1:
+![WhatsApp Image 2025-04-21 at 22 03 07_b8530b98](https://github.com/user-attachments/assets/74def382-6f13-4261-ae98-961ed743c5e1)
 
+boolean expression for f2
+![WhatsApp Image 2025-04-21 at 22 03 08_b060067e](https://github.com/user-attachments/assets/e7392bcb-ae1d-4736-ba82-8eeef1a222a3)
+
+**Logic Diagram**
+![image](https://github.com/user-attachments/assets/961d23a4-d7ea-4625-932d-61b2336a8db8)
+![image](https://github.com/user-attachments/assets/c01c8a00-da64-46fd-b399-1f40a4734f93)
 
 **Procedure**
 
@@ -35,36 +41,21 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Program:**
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
-```
-module boolean(A,B,C,D,W,X,Y,Z,F1,F2);
-input A,B,C,D,W,X,Y,Z;
-wire x1,x2,x3,x4,x5,x6,x7,x8,x9,x10;
-output F1,F2;
-assign x1=(~A)&(~B)&(~C)&(~D);
-assign x2=(A)&(~C)&(~D);
-assign x3=(~B)&(C)&(~D);
-assign x4=(~A)&(B)&(C)&(D);
-assign x5=(B)&(~C)&(D);
-assign x6=(X)&(~Y)&(Z);
-assign x7=(~X)&(~Y)&(Z);
-assign x8=(~W)&(X)&(Y);
-assign x9=(W)&(~X)&(Y);
-assign x10=(W)&(X)&(Y);
-assign F1=x1|x2|x3|x4|x5;
-assign F2=x6|x7|x8|x9|x10;
-endmodule
-```
-Developed by: RegisterNumber: 24900124
+![Screenshot 2025-04-21 220110](https://github.com/user-attachments/assets/b126c61b-6ce0-412d-ab4e-c7b50366d605)
 
 
-**TruthTable**
+Developed by:Arunraj R
+RegisterNumber: 212224110006
 
-![Screenshot 2024-12-06 194124](https://github.com/user-attachments/assets/22d803fb-c979-4626-8439-2b4191718e64)
 
-**RTL**
+**RTL realization**
 
-![Screenshot 2024-12-06 194141](https://github.com/user-attachments/assets/91c04724-f9f6-40de-af43-7f61e7b968b1)
+![Screenshot 2025-04-21 214844](https://github.com/user-attachments/assets/02a27cb1-d0f4-4a24-b632-9bbc400ed38f)
+
+
+**Timing Diagram**
+
+![image](https://github.com/user-attachments/assets/00d11e1e-afad-48fb-a10b-f1225ed1741f)
 
 
 **Result:**
